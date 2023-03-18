@@ -5,7 +5,7 @@ function createDbConnection()
     $ini = parse_ini_file("myconf.ini");
 
     $host = "localhost";
-    $db = "sample";
+    $db = "classicmodels";
     $username = 'root';
     $pw = '';
 
