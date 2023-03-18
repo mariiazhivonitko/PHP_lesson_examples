@@ -4,10 +4,10 @@ function createDbConnection()
 {
     $ini = parse_ini_file("myconf.ini");
 
-    $host = $ini["host"];
-    $db = $ini["db"];
-    $username = $ini["username"];
-    $pw = $ini["pw"];
+    $host = "localhost";
+    $db = "sample";
+    $username = 'root';
+    $pw = '';
 
     try {
         $dbcon = new PDO("mysql:host=$host;dbname=$db", $username, $pw);
