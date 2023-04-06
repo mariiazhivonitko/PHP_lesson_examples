@@ -9,15 +9,13 @@ function createDbConnection()
     $username = $ini["username"];
     $pw = $ini["pw"];
 
-    echo "Good!";
     
     try {
         $dbcon = new PDO("mysql:host=$host;dbname=$db", $username, $pw);
-        echo "Good!";
+        echo "Connected!";
         //return $dbcon;
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
 
-    echo "HEI!";
 }
