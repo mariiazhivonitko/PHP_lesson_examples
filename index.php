@@ -1,11 +1,14 @@
 <?php
-require "dbconnection.php";
+
+  require "dbconnection.php";
 $dbcon = createDbConnection();
-$sql = "INSERT INTO person (name) VALUES(
-   'MARIIA'
-)";
+//$sql = "CREATE TABLE person
+   //fname CHAR(20) PRIMARY KEY,
+   //age SMALLINT";
+
+echo "Hei!";
 
 
 
-$dbcon->exec($sql);
+//$dbcon->exec($sql);
 ?>
